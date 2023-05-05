@@ -8,12 +8,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(#ffffff, #497396);
-}
-.header h1{
-    color: #000000;
-    text-decoration: none;
-    font-size: 18px;
+    background: linear-gradient(#313131, #497396);
 }
 nav{
     display: flex;
@@ -23,16 +18,45 @@ nav{
 }
 .nav-links{
     flex: 1;
-    text-align: right;
+    text-align: center;
 }
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8pc 12px;
+    padding: 8px 12px;
     position: relative;
 }
 .nav-links ul li a{
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #497396;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: #ffffff;
 }
