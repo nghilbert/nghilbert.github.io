@@ -10,6 +10,11 @@
     overflow: hidden;
     background: linear-gradient(#ffffff, #497396);
 }
+.header h1{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
 nav{
     display: flex;
     padding: 2% 6%;
@@ -25,4 +30,9 @@ nav{
     display: inline-block;
     padding: 8pc 12px;
     position: relative;
+}
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
 }
